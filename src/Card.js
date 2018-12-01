@@ -23,11 +23,12 @@ class Card extends Component {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
     };
+
     const h2 = {
       color: "#BA27AC",
       fontWeight: "400",
       fontSize: "30px",
-      marginBottom:"-26px",
+      marginBottom: "-26px",
     }
     return (
       <div>
