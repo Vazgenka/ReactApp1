@@ -10,20 +10,6 @@ class Card extends Component {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
     };
-    const style2 = {
-      backgroundImage: 'url(' + this.props.img2 + ')',
-      height: "300px",
-      color: "red",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center center",
-    };
-    const style3 = {
-      backgroundImage: 'url(' + this.props.img3 + ')',
-      height: "300px",
-      color: "red",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center center",
-    };
     const h2 = {
       color: "#BA27AC",
       fontWeight: "400",
