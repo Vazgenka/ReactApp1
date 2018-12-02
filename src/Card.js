@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Card extends Component {
   render() {
+
     const style = {
       backgroundImage: 'url(' + this.props.img + ')',
       height: "300px",
@@ -23,13 +24,13 @@ class Card extends Component {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center center",
     };
-
     const h2 = {
       color: "#BA27AC",
       fontWeight: "400",
       fontSize: "30px",
       marginBottom: "-26px",
     }
+
     return (
       <div>
         <div className="demo-card-wide mdl-card mdl-shadow--2dp">
