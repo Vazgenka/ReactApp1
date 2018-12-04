@@ -1,0 +1,49 @@
+body {
+  background: url('http://www.glomart.ru/data/img/stol-obedenniy-marcello-TC9824-2.jpg') center/cover;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+#bars {
+  float: left;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+#count {
+  font-size: 25px;
+  float: left;
+  margin-left: 650px;
+  margin-top: 50px;
+}
+
+#player {
+  float: left;
+  margin-left: -210px;
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+#buttons1 {
+  float: left;
+  margin-left: -1020px;
+  margin-top: 400px;
+}
+
+#user1 {
+  background-color: #2B12B4;
+}
+
+#buttons2 {
+  float: right;
+  margin-right: 100px;
+  margin-top: 400px;
+}
+
+#user2 {
+  background-color: #C41139;
+}
+
+#forBars {
+  font-size: 30px;
+}

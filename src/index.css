@@ -6,15 +6,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.demo-card-wide, .mdl-card, .mdl-shadow--2dp {
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;
 }
