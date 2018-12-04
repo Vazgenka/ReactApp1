@@ -4,46 +4,36 @@ body {
   color: #ffffff;
 }
 
-#bars {
-  float: left;
-  margin-left: 400px;
-  margin-top: 100px;
-}
-
-#count {
-  font-size: 25px;
-  float: left;
-  margin-left: 650px;
+#bars, #player, #count  {
+  border: 2px solid black;
   margin-top: 50px;
-}
-
-#player {
-  float: left;
-  margin-left: -210px;
+  text-align: center;
   font-size: 25px;
-  margin-top: 100px;
 }
 
 #buttons1 {
-  float: left;
-  margin-left: -1020px;
-  margin-top: 400px;
+  margin-top: 250px;
+  border: 2px solid black;
+  float: right;
+  margin-right: 100px;
+}
+
+#buttons2 {
+  width: 90px;
+  margin-top: 250px;
+  border: 2px solid black;
+  margin-left: 100px;
+}
+
+
+#forBars {
+  font-size: 30px;
 }
 
 #user1 {
   background-color: #2B12B4;
 }
 
-#buttons2 {
-  float: right;
-  margin-right: 100px;
-  margin-top: 400px;
-}
-
 #user2 {
   background-color: #C41139;
-}
-
-#forBars {
-  font-size: 30px;
 }
