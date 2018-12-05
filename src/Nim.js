@@ -44,6 +44,7 @@ class Nim extends Component {
     if (this.state.barsCount <= 1) {
       alert("Player " + this.state.currentPlayer + " has lost!")
       document.getElementById("game").remove()
+      document.getElementById("end").fadeIn(300)
     }
 
     var barsView  = ""
@@ -70,6 +71,9 @@ class Nim extends Component {
           <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Взять 1</button></p>
           <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Взять 2</button></p>
           <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Взять 3</button></p>
+        </div>
+        <div id="end">
+          <p>The End!</p>
         </div>
       </div>
     )
