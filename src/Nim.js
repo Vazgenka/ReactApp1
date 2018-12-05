@@ -23,11 +23,15 @@ class Nim extends Component {
 
 
   render () {
-    if (this.state.currentPlayer == 1) {
-      document.getElementById("user2").disabled = true;
-    } else {
-      document.getElementById("user1").disabled = true;
+
+    componentDidUpdate() {
+      if (this.state.currentPlayer == 1) {
+        document.getElementById("user2").disabled = true;
+      } else {
+        document.getElementById("user1").disabled = true;
+      }
     }
+
 
     if (this.state.barsCount < 2) {
       alert("Player " + this.state.currentPlayer + " has lost!")
