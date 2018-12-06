@@ -12,6 +12,16 @@ class Nim extends Component {
     }
   }
 
+  startAgain() {
+    this.setState({
+      currentPlayer: 3 - this.state.currentPlayer,
+      barsCount: this.props.count,
+    })
+    if (document.getElementById("game")) {
+      document.getElementById("game").style.display = "block";
+    }
+  }
+
   removeBars(amount) {
     if (this.state.barsCount != 1) {
       this.setState({
@@ -73,15 +83,11 @@ class Nim extends Component {
     if (this.state.barsCount <= 1) {
       alert("Player " + this.state.currentPlayer + " has lost!")
       if (document.getElementById("game")) {
-        document.getElementById("game").remove();
+        document.getElementById("game").style.display = "none";
       }
       if (document.getElementById("end")) {
-        document.getElementById("end").fadeIn(400);
+        document.getElementById("end").style.display = "block";
       }
-    }
-    
-    if (document.getElementById("end")) {
-      document.getElementById("end").style.display = "none";
     }
 
     var barsView  = ""
@@ -91,26 +97,46 @@ class Nim extends Component {
     }
 
     return (
-      <div id="game">
-        <div id="stats">
-          <p id="count">Палочек на столе: {this.state.barsCount}</p>
-          <p id="player">Ходит игрок: {this.state.currentPlayer}</p>
-        </div>
-        <div id="bars">
-          <p id="forBars">{barsView}</p>
-        </div>
-        <div id="buttons1">
-          <p><button id="user11" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Взять 1</button></p>
-          <p><button id="user12" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Взять 2</button></p>
-          <p><button id="user13" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Взять 3</button></p>
-        </div>
-        <div id="buttons2">
-          <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Взять 1</button></p>
-          <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Взять 2</button></p>
-          <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Взять 3</button></p>
+      <div id="all">
+        <div id="game">
+          <div id="stats">
+            <p id="count">Bars on the table: {this.state.barsCount}</p>
+            <p id="player">{this.state.currentPlayer} Player's turn</p>
+          </div>
+          <div id="bars">
+            <p id="forBars">{barsView}</p>
+          </div>
+          <div id="buttons1">
+            <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__supporting-text">
+                <p><button id="user11" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Take 1</button></p>
+                <p><button id="user12" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Take 2</button></p>
+                <p><button id="user13" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Take 3</button></p>
+              </div>
+            </div>
+          </div>
+          <div id="buttons2">
+            <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__supporting-text">
+                <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Take 1</button></p>
+                <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Take 2</button></p>
+                <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Take 3</button></p>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="end">
-          <p>Hello</p>
+          <p id="thEnd">Game Over!</p>
+          <p id="choice">Would you like to try again?</p>
+          <div id="choice1">
+            <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__supporting-text">
+                <button id="No" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.startAgain(3)}}>Yes</button>
+                <button id="Yes" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">No</button>
+                <p id="Text">單擊是</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )

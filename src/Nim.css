@@ -1,43 +1,80 @@
 body {
-  background: url('http://www.glomart.ru/data/img/stol-obedenniy-marcello-TC9824-2.jpg') center/cover;
+  background: url('https://previews.123rf.com/images/lizard/lizard1008/lizard100800257/7533623-editable-vector-high-tech-futuristic-frame-with-space-for-your-text-or-image.jpg') center/cover;
   font-size: 25px;
   color: #ffffff;
 }
 
 #bars, #player, #count  {
-  border: 2px solid black;
+  color: #000;
   margin-top: 50px;
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 #buttons1 {
-  margin-top: 250px;
-  border: 2px solid black;
+  margin-top: 200px;
   float: right;
-  margin-right: 100px;
+  margin-right: 150px;
 }
 
 #buttons2 {
-  width: 90px;
-  margin-top: 250px;
-  border: 2px solid black;
-  margin-left: 100px;
+  margin-top: 220px;
+  margin-left: 150px;
 }
 
 #end {
+  margin-top: 200px;
+  display: none;
   text-align: center;
-  font-size: 23px;
 }
 
 #forBars {
-  font-size: 30px;
+  margin-top: 70px;
+  font-size: 40px;
 }
 
 #user11,#user12,#user13 {
   background-color: #2B12B4;
+  box-shadow: 0 0 10px rgb(0,0,0);
 }
 
 #user21,#user22,#user23 {
   background-color: #C41139;
+  box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+#thEnd {
+  color: #000;
+  font-size: 70px;
+}
+
+#choice {
+  color: #000;
+  padding-top: 30px;
+  font-size: 30px;
+}
+#choice1 {
+  color: #000;
+  padding-top: 30px;
+  margin-left: 590px;
+}
+
+#Yes {
+  margin-left: 150px;
+  background-color: #DB0000;
+}
+
+#No {
+  background-color: #000CDB;
+}
+
+#Text {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600px;
+  margin-top: 30px;
+}
+
+#card {
+  background-color: #000;
 }
