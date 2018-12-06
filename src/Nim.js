@@ -73,15 +73,15 @@ class Nim extends Component {
     if (this.state.barsCount <= 1) {
       alert("Player " + this.state.currentPlayer + " has lost!")
       if (document.getElementById("game")) {
-        document.getElementById("game").remove()
+        document.getElementById("game").remove();
       }
       if (document.getElementById("end")) {
-        document.getElementById("end").fadeIn(400)
+        document.getElementById("end").fadeIn(400);
       }
-    } else {
-      if (document.getElementById("end")) {
-        document.getElementById("end").style.display == "none";
-      }
+    }
+    
+    if (document.getElementById("end")) {
+      document.getElementById("end").style.display = "none";
     }
 
     var barsView  = ""
