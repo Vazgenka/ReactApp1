@@ -23,19 +23,48 @@ class Nim extends Component {
 
   componentDidUpdate() {
     if (this.state.currentPlayer == 1) {
-      document.getElementById("user21").disabled = true;
-      document.getElementById("user11").disabled = false;
-      document.getElementById("user22").disabled = true;
-      document.getElementById("user12").disabled = false;
-      document.getElementById("user23").disabled = true;
-      document.getElementById("user13").disabled = false;
+      if (document.getElementById("user21")) {
+          document.getElementById("user21").disabled = true;
+      }
+      if (document.getElementById("user11")) {
+          document.getElementById("user11").disabled = false;
+      }
+      if (document.getElementById("user22")) {
+          document.getElementById("user22").disabled = true;
+      }
+      if (document.getElementById("user12")) {
+          document.getElementById("user12").disabled = false;
+      }
+      if (document.getElementById("user23")) {
+          document.getElementById("user23").disabled = true;
+      }
+      if (document.getElementById("user13")) {
+          document.getElementById("user13").disabled = false;
+      }
+
+
+
+
+
     } else {
-      document.getElementById("user21").disabled = false;
-      document.getElementById("user11").disabled = true;
-      document.getElementById("user22").disabled = false;
-      document.getElementById("user12").disabled = true;
-      document.getElementById("user23").disabled = false;
-      document.getElementById("user13").disabled = true;
+      if (document.getElementById("user21")) {
+          document.getElementById("user21").disabled = false;
+      }
+      if (document.getElementById("user11")) {
+          document.getElementById("user11").disabled = true;
+      }
+      if (document.getElementById("user22")) {
+          document.getElementById("user22").disabled =false;
+      }
+      if (document.getElementById("user12")) {
+          document.getElementById("user12").disabled = true;
+      }
+      if (document.getElementById("user23")) {
+          document.getElementById("user23").disabled = false;
+      }
+      if (document.getElementById("user13")) {
+          document.getElementById("user13").disabled = true;
+      }
     }
   }
 
@@ -43,8 +72,16 @@ class Nim extends Component {
 
     if (this.state.barsCount <= 1) {
       alert("Player " + this.state.currentPlayer + " has lost!")
-      document.getElementById("game").remove()
-      document.getElementById("end").fadeIn(300)
+      if (document.getElementById("game")) {
+        document.getElementById("game").remove()
+      }
+      if (document.getElementById("end")) {
+        document.getElementById("end").fadeIn(400)
+      }
+    } else {
+      if (document.getElementById("end")) {
+        document.getElementById("end").style.display == "none";
+      }
     }
 
     var barsView  = ""
@@ -73,7 +110,7 @@ class Nim extends Component {
           <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Взять 3</button></p>
         </div>
         <div id="end">
-          <p>The End!</p>
+          <p>Hello</p>
         </div>
       </div>
     )

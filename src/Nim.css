@@ -25,6 +25,10 @@ body {
   margin-left: 100px;
 }
 
+#end {
+  text-align: center;
+  font-size: 23px;
+}
 
 #forBars {
   font-size: 30px;
