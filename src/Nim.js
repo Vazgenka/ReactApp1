@@ -90,10 +90,10 @@ class Nim extends Component {
       }
     }
 
-    var barsView  = ""
+    var barsList  = []
 
     for (var i = 1; i <= this.state.barsCount; i++) {
-      barsView += "|"
+      barsList.push(<i class="material-icons">navigation</i>)
     }
 
     return (
@@ -104,11 +104,16 @@ class Nim extends Component {
             <p id="player">{this.state.currentPlayer} Player's turn</p>
           </div>
           <div id="bars">
-            <p id="forBars">{barsView}</p>
+          <div id="card2" class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__supporting-text">
+              <p id="forBars">{barsList}</p>
+            </div>
+          </div>
           </div>
           <div id="buttons1">
             <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
               <div class="mdl-card__supporting-text">
+                <p id="text2">第一個球員</p>
                 <p><button id="user11" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Take 1</button></p>
                 <p><button id="user12" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Take 2</button></p>
                 <p><button id="user13" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Take 3</button></p>
@@ -118,6 +123,7 @@ class Nim extends Component {
           <div id="buttons2">
             <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
               <div class="mdl-card__supporting-text">
+                <p id="text3">第二名球員</p>
                 <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(1)}}>Take 1</button></p>
                 <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(2)}}>Take 2</button></p>
                 <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.removeBars(3)}}>Take 3</button></p>

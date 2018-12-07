@@ -12,13 +12,13 @@ body {
 }
 
 #buttons1 {
-  margin-top: 200px;
+  margin-top: 90px;
   float: right;
   margin-right: 150px;
 }
 
 #buttons2 {
-  margin-top: 220px;
+  margin-top: 70px;
   margin-left: 150px;
 }
 
@@ -30,12 +30,17 @@ body {
 
 #forBars {
   margin-top: 70px;
-  font-size: 40px;
+}
+
+.material-icons {
+  font-size: 30px;
+  color: #000;
 }
 
 #user11,#user12,#user13 {
   background-color: #2B12B4;
   box-shadow: 0 0 10px rgb(0,0,0);
+  margin-left: 215px;
 }
 
 #user21,#user22,#user23 {
@@ -77,4 +82,21 @@ body {
 
 #card {
   background-color: #000;
+}
+
+#card2 {
+  min-width: 600px;
+  box-shadow: 0 0 30px rgb(0,0,0);
+  background-color: #fff;
+  width: 900px;
+  margin-left: 300px;
+}
+
+#text2,#text3 {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#text3 {
+  margin-left: 172px;
 }
