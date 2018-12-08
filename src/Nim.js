@@ -137,7 +137,7 @@ class Nim extends Component {
           <div id="choice1">
             <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
               <div class="mdl-card__supporting-text">
-                <button id="No" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.startAgain(3)}}>Yes</button>
+                <button id="No" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.startAgain()}}>Yes</button>
                 <button id="Yes" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">No</button>
                 <p id="Text">單擊是</p>
               </div>
