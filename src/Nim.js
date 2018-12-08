@@ -107,11 +107,11 @@ class Nim extends Component {
             <p id="player">{this.state.currentPlayer} Player's turn</p>
           </div>
           <div id="bars">
-          <div id="card2" class="demo-card-square mdl-card mdl-shadow--2dp">
-            <div class="mdl-card__supporting-text">
-              <p id="forBars">{barsList}</p>
+            <div id="card2" class="demo-card-square mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__supporting-text">
+                <p id="forBars">{barsList}</p>
+              </div>
             </div>
-          </div>
           </div>
           <div id="buttons1">
             <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
