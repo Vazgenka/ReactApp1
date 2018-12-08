@@ -20,6 +20,9 @@ class Nim extends Component {
     if (document.getElementById("game")) {
       document.getElementById("game").style.display = "block";
     }
+    if (document.getElementById("end")) {
+      document.getElementById("end").style.display = "none";
+    }
   }
 
   removeBars(amount) {
