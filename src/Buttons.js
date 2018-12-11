@@ -58,9 +58,9 @@ class Buttons extends Component {
           <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
             <div class="mdl-card__supporting-text">
               <p id="text2">第一個球員</p>
-              <p><button id="user11" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(1)}}>Take 1</button></p>
-              <p><button id="user12" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(2)}}>Take 2</button></p>
-              <p><button id="user13" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(3)}}>Take 3</button></p>
+              <p><button id="user11" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(1)}}>Take 1</button></p>
+              <p><button id="user12" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(2)}}>Take 2</button></p>
+              <p><button id="user13" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(3)}}>Take 3</button></p>
             </div>
           </div>
         </div>
@@ -68,9 +68,9 @@ class Buttons extends Component {
           <div id="card" class="demo-card-square mdl-card mdl-shadow--2dp">
             <div class="mdl-card__supporting-text">
               <p id="text3">第二名球員</p>
-              <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(1)}}>Take 1</button></p>
-              <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(2)}}>Take 2</button></p>
-              <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.removeBars(3)}}>Take 3</button></p>
+              <p><button id="user21" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(1)}}>Take 1</button></p>
+              <p><button id="user22" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(2)}}>Take 2</button></p>
+              <p><button id="user23" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick = {() => {this.props.clickMethod(3)}}>Take 3</button></p>
             </div>
           </div>
         </div>
