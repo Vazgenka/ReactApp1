@@ -5,7 +5,8 @@ class Buttons extends Component {
     super(props)
 
     this.state = {
-      currentPlayer: 1
+      currentPlayer: 1,
+      barsCount: 75,
     }
   }
 

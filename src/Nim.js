@@ -43,7 +43,7 @@ class Nim extends Component {
       <div id="all">
         <div id="game">
           <div id="stats">
-            <Stats currentPlayer={this.state.currentPlayer} count={75}/>
+            <Stats currentPlayer={this.state.currentPlayer} barsCountStats={this.state.barsCount} />
           </div>
           <div id="bars">
             <Bars barsCount={this.state.barsCount} />
