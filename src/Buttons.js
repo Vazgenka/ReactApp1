@@ -4,10 +4,6 @@ class Buttons extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      currentPlayer: 1,
-      barsCount: 75,
-    }
   }
 
   componentDidUpdate() {

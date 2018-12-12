@@ -10,8 +10,8 @@ class Stats extends Component {
 
     return (
       <div>
-        <p id="count">Bars on the table: {this.state.barsCountStats}</p>
-        <p id="player">{this.state.currentPlayer} Player's turn</p>
+        <p id="count">Bars on the table: {this.props.barsCountStats}</p>
+        <p id="player">{this.props.currentPlayer} Player's turn</p>
       </div>
     )
   }

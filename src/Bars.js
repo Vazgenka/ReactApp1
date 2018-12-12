@@ -4,15 +4,11 @@ class Bars extends Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      barsCount: this.props.count,
-      currentPlayer: 1
-    }
   }
 
   render () {
 
-    if (this.state.barsCount <= 1) {
+    if (this.props.barsCountBars <= 1) {
       alert("Player " + this.state.currentPlayer + " has lost!")
       if (document.getElementById("game")) {
         document.getElementById("game").style.display = "none";
@@ -24,7 +20,7 @@ class Bars extends Component {
 
     var barsList  = []
 
-    for (var i = 1; i <= this.state.barsCount; i++) {
+    for (var i = 1; i <= this.props.barsCountBars; i++) {
       barsList.push(<i class="material-icons">navigation</i>)
     }
 

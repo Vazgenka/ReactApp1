@@ -16,12 +16,14 @@ class Nim extends Component {
   }
 
   removeBars(amount) {
-    if (this.state.barsCount != 1) {
       this.setState({
-        currentPlayer: 3 - this.state.currentPlayer,
-        barsCount: this.state.barsCount - amount,
+        currentPlayer: 3 - this.props.currentPlayer,
+        barsCount: this.props.barsCount - amount,
       })
-    }
+  }
+
+  onButtonClick(amount) {
+    alert(amount)
   }
 
   startAgain() {
@@ -46,10 +48,10 @@ class Nim extends Component {
             <Stats currentPlayer={this.state.currentPlayer} barsCountStats={this.state.barsCount} />
           </div>
           <div id="bars">
-            <Bars barsCount={this.state.barsCount} />
+            <Bars barsCountBars={this.state.barsCount} />
           </div>
           <div id="buttons">
-            <Buttons clickMethod={this.removeBars}/>
+            <Buttons clickMethod={this.removeBars} currentPlayer={this.state.currentPlayer} barsCount={this.state.barsCount}/>
           </div>
         </div>
         <div id="end">
