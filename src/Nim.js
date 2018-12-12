@@ -17,8 +17,8 @@ class Nim extends Component {
 
   removeBars(amount) {
       this.setState({
-        currentPlayer: 3 - this.props.currentPlayer,
-        barsCount: this.props.barsCount - amount,
+        currentPlayer: 3 - this.state.currentPlayer,
+        barsCount: this.state.barsCount - amount,
       })
   }
 
