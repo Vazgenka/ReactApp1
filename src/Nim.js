@@ -48,7 +48,7 @@ class Nim extends Component {
             <Stats currentPlayer={this.state.currentPlayer} barsCountStats={this.state.barsCount} />
           </div>
           <div id="bars">
-            <Bars barsCountBars={this.state.barsCount} />
+            <Bars barsCountBars={this.state.barsCount} currentPlayer={this.state.currentPlayer}/>
           </div>
           <div id="buttons">
             <Buttons clickMethod={this.removeBars.bind(this)} currentPlayer={this.state.currentPlayer} barsCount={this.state.barsCount}/>

@@ -9,7 +9,7 @@ class Bars extends Component {
   render () {
 
     if (this.props.barsCountBars <= 1) {
-      alert("Player " + this.state.currentPlayer + " has lost!")
+      alert("Player " + this.props.currentPlayer + " has lost!")
       if (document.getElementById("game")) {
         document.getElementById("game").style.display = "none";
       }
