@@ -7,7 +7,7 @@ class Buttons extends Component {
   }
 
   componentDidUpdate() {
-    if (this.state.currentPlayer == 1) {
+    if (this.props.currentPlayer == 1) {
       if (document.getElementById("user21")) {
           document.getElementById("user21").disabled = true;
       }
