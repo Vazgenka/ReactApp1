@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nim from './Nim';
 
 class Stats extends Component {
   constructor (props) {
